@@ -1,9 +1,30 @@
 import "./bestSelling.css";
 import Carousel from "./SlideSelling";
 export default function BestSelling() {
-
-    return <div className="w-full p-8 flex justify-center">
-        <div className="w-[80%] bestSelling-content p-8">
+    const item = [
+        {
+            imageUrl: "/public/assets/liberty.webp",
+            title: "Liberty Z Urban Sky",
+            price: "59.300.000₫"
+        },
+        {
+            imageUrl: "/public/assets/vespa1.webp",
+            title: "Vespa Sprint Carbon 125 - Black",
+            price: "84.600.000₫"
+        },
+        {
+            imageUrl: "/public/assets/vespa2.webp",
+            title: "Vespa Sprint S 150 White",
+            price: "97.800.000₫"
+        },
+        {
+            imageUrl: "/public/assets/vespa1.webp",
+            title: "Vespa Sprint ABS 125 Rosso Scarlatto",
+            price: "84.600.000₫"
+        }
+    ]
+    return <div className="container mx-auto p-8 flex justify-center">
+        <div className="container bestSelling-content p-8">
             <Carousel />
         </div>
     </div>

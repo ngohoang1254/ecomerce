@@ -112,7 +112,7 @@ export default function Header() {
         }
     ]
     return (
-        <div className="p-8 w-full h-full bg-white">
+        <div className="p-8 w-full h-full bg-white sticky top-0 z-50">
             <div className="flex justify-center gap-4 text-black font-bold cursor-pointer">
                 {item.map((ele: any, index) => {
                     return <MenuComponent item={ele} key={index} />

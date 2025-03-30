@@ -133,7 +133,6 @@ export default function Home() {
       <NewsList />
       {/* Đối tác */}
       <Partner />
-      <Footer />
       {/* <Hero />
       <BestSelling /> */}
     </div>
