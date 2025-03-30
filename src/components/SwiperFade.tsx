@@ -24,13 +24,14 @@ export default function Banner() {
                 loop={true}
                 autoplay={{ delay: 3000 }}
                 modules={[EffectFade, Autoplay, Navigation]}
-                className="w-full h-[500px]"
+                className="w-full h-[700px]"
             >
                 <SwiperSlide className="relative w-full h-full">
                     <Image src="/assets/slider_2.webp" alt="Slide 1" fill />
                 </SwiperSlide>
                 <SwiperSlide className="relative w-full h-full">
-                    <Image src="/assets/slider_3.webp" alt="Slide 2" fill />            </SwiperSlide>
+                    <Image src="/assets/slider_3.webp" alt="Slide 2" fill />
+                </SwiperSlide>
             </Swiper>
             <div className="absolute bg-[rgba(0,0,0,0.75)] bg-opacity-50 w-[300px] h-full top-0 left-[10%] z-10 flex flex-col justify-center p-4 gap-4">
                 <div className="text-2xl text-white font-bold">Tìm kiếm xe bạn thích</div>
