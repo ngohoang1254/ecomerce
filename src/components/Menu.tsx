@@ -1,11 +1,13 @@
 import {
-    DropdownMenu,
-    DropdownMenuContent,
-    DropdownMenuItem,
-    DropdownMenuLabel,
-    DropdownMenuSeparator,
-    DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu"
+    NavigationMenu,
+    NavigationMenuContent,
+    NavigationMenuIndicator,
+    NavigationMenuItem,
+    NavigationMenuLink,
+    NavigationMenuList,
+    NavigationMenuTrigger,
+    NavigationMenuViewport,
+} from "@/components/ui/navigation-menu"
 interface IMenu {
     item: {
         label: string,
@@ -21,17 +23,19 @@ interface IMenuItem {
 
 export default function MenuComponent({ item }: IMenu) {
     return (
-        <DropdownMenu>
-            <DropdownMenuTrigger className="hover:text-blue-500 text-black cursor-pointer !border-none!">{item.label}</DropdownMenuTrigger>
-            {item?.element?.length > 0 && (
-                <DropdownMenuContent>
-                    {item.element?.map((ele, index) => {
-                        return (
-                            <DropdownMenuItem key={index}>{ele.label}</DropdownMenuItem>
-                        )
-                    })}
-                </DropdownMenuContent>
-            )}
-        </DropdownMenu>
+        <NavigationMenu>
+            <NavigationMenuList>
+                <NavigationMenuItem>
+                    <NavigationMenuTrigger className="hover:text-blue-500 text-black cursor-pointer !border-none! text-base">{item.label}</NavigationMenuTrigger>
+                    <NavigationMenuContent className="min-w-[200px]">
+                        {item.element?.map((ele, index) => {
+                            return (
+                                <NavigationMenuLink key={index}>{ele.label}</NavigationMenuLink>
+                            )
+                        })}
+                    </NavigationMenuContent>
+                </NavigationMenuItem>
+            </NavigationMenuList>
+        </NavigationMenu >
     )
 }

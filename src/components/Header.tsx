@@ -1,5 +1,8 @@
-import MenuComponent from "./Menu"
 
+"use client"
+import Image from "next/image"
+import MenuComponent from "./Menu"
+import MenuMobile from "./MenuMobile"
 export default function Header() {
     const item = [
         {
@@ -112,12 +115,14 @@ export default function Header() {
         }
     ]
     return (
-        <div className="p-8 w-full h-full bg-white sticky top-0 z-50">
-            <div className="flex justify-center gap-4 text-black font-bold cursor-pointer">
+        <div className="p-4 w-full h-full bg-white sticky top-0 z-50">
+            <div className="text-black font-bold cursor-pointer flex-wrap hidden lg:flex justify-center">
+                <Image src="/assets/logo.jpeg" width={200} height={100} alt="logo" />
                 {item.map((ele: any, index) => {
                     return <MenuComponent item={ele} key={index} />
                 })}
             </div>
+            <MenuMobile />
         </div>
     )
 }
