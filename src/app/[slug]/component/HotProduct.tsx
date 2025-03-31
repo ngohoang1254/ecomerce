@@ -1,8 +1,10 @@
 import BestSellingItem from "@/components/BestSellingItem";
 import Image from "next/image";
 import HotProductItem from "./HotProductItem";
-
-export default function HotProduct() {
+interface IHotProduct {
+    height?: number
+}
+export default function HotProduct({ height }: IHotProduct) {
     const item = [
         {
             imageUrl: "/assets/liberty.webp",
@@ -26,7 +28,9 @@ export default function HotProduct() {
         }
     ]
     return (
-        <div className="w-full border-[1px] flex flex-col h-[200px] overflow-auto relative">
+        <div className="w-full border-[1px] flex flex-col overflow-auto relative"
+            style={{ height: height ? height : 200 }}
+        >
             <div className="flex w-full sticky top-0">
                 <Image src="/assets/icon_vespa2.png" width={50} height={50} alt="" />
                 <div className="bg-blue-500 cursor-pointer flex-1 flex items-center font-bold text-xl p-2 text-white">Sản phẩm hot</div>

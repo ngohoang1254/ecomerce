@@ -1,0 +1,19 @@
+.tab-trigger {
+    padding: 12px 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.tab-trigger[data-state="active"] {
+    border-bottom: 2px solid blue;
+    color: blue;
+}
+
+.tab-trigger:hover {
+    border-bottom: 2px solid blue;
+    color: blue;
+}
+
+.tab-content {
+    padding: 16px;
+}

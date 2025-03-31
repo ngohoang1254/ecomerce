@@ -1,0 +1,35 @@
+.readmore-container {
+    position: relative;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.readmore-content {
+    max-height: 300px;
+    /* Hiển thị tối đa 80px nội dung */
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+}
+
+.readmore-content.expanded {
+    max-height: none;
+    /* Mở rộng toàn bộ nội dung */
+}
+
+.fade-overlay {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(transparent, white);
+}
+
+.readmore-button {
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
