@@ -31,7 +31,7 @@ export default function ProductInfo() {
                     <Input className='max-w-[100px] rounded-none text-center' />
                     <div className="border px-4 cursor-pointer flex items-center text-gray-600">+</div>
                 </div>
-                <Button className="font-bold bg-blue-600 cursor-pointer px-8">Đặt hàng</Button>
+                <Button className="font-bold bg-[#0660bb] cursor-pointer px-8">Đặt hàng</Button>
             </div>
             <div className="flex flex-col gap-2 text-sm mt-4">
                 <div>Lấy giá ưu đãi gọi ngay 📱Hotline: <strong>

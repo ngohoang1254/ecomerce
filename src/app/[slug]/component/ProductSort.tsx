@@ -19,7 +19,7 @@ const SortingViewInterface = () => {
                 <Button
                     variant={viewMode === "grid" ? "default" : "outline"}
                     size="icon"
-                    className={`h-10 w-10 ${viewMode === "grid" ? "bg-blue-600 hover:bg-blue-700" : ""}`}
+                    className={`h-10 w-10 ${viewMode === "grid" ? "bg-[#0660bb] hover:bg-[#0660bb]" : ""}`}
                     onClick={() => setViewMode("grid")}
                 >
                     <Grid2X2 className="h-5 w-5" />
@@ -27,7 +27,7 @@ const SortingViewInterface = () => {
                 <Button
                     variant={viewMode === "list" ? "default" : "outline"}
                     size="icon"
-                    className={`h-10 w-10 ${viewMode === "list" ? "bg-blue-600 hover:bg-blue-700" : ""}`}
+                    className={`h-10 w-10 ${viewMode === "list" ? "bg-[#0660bb] hover:bg-[#0660bb]" : ""}`}
                     onClick={() => setViewMode("list")}
                 >
                     <List className="h-5 w-5" />

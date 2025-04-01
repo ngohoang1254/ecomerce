@@ -6,7 +6,7 @@ export default function NewsList() {
     return (
         <div className="container mx-auto">
             <div className="w-full p-2 flex flex-col gap-4">
-                <div className="text-2xl font-bold text-white bg-blue-500 rounded-tl-sm rounded-tr-sm px-4 py-2">
+                <div className="text-2xl font-bold text-white bg-[#0660bb] rounded-tl-sm rounded-tr-sm px-4 py-2">
                     TIN TỨC
                 </div>
                 {/* <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">

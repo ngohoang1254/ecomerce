@@ -11,7 +11,7 @@ export default function ProductList() {
         <div className="w-full border-[1px] flex flex-col">
             <div className="flex w-full">
                 <Image src="/assets/icon_vespa2.png" width={50} height={50} alt="" />
-                <div className="bg-blue-500 cursor-pointer flex-1 flex items-center font-bold text-xl p-2 text-white">Sản phẩm</div>
+                <div className="bg-[#0660bb] cursor-pointer flex-1 flex items-center font-bold text-xl p-2 text-white">Sản phẩm</div>
             </div>
             <div className="flex flex-col p-4">
                 <Accordion type="single" collapsible >

@@ -80,7 +80,7 @@ export default function Banner() {
                         })}
                     </SelectContent>
                 </Select>
-                <Button className="bg-blue-500 hover:bg-blue-500 cursor-pointer">Tìm kiếm</Button>
+                <Button className="bg-[#0660bb] hover:bg-[#0660bb] cursor-pointer">Tìm kiếm</Button>
             </div>
             {/* Menu search mobile */}
             <div className="w-full bg-[rgba(0,0,0,0.75)] p-4 block xl:hidden">
@@ -103,7 +103,7 @@ export default function Banner() {
                                 })}
                             </SelectContent>
                         </Select>
-                        <Button className="h-12 bg-blue-700 font-bold"
+                        <Button className="h-12 bg-[#0660bb] font-bold"
                             onClick={() => {
 
                             }}

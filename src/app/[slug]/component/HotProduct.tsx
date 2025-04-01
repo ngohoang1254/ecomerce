@@ -33,7 +33,7 @@ export default function HotProduct({ height }: IHotProduct) {
         >
             <div className="flex w-full sticky top-0">
                 <Image src="/assets/icon_vespa2.png" width={50} height={50} alt="" />
-                <div className="bg-blue-500 cursor-pointer flex-1 flex items-center font-bold text-xl p-2 text-white">Sản phẩm hot</div>
+                <div className="bg-[#0660bb] cursor-pointer flex-1 flex items-center font-bold text-xl p-2 text-white">Sản phẩm hot</div>
             </div>
             <div className="flex flex-col p-4 gap-4">
                 {item.map((ele, index) => {

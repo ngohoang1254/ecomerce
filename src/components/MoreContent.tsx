@@ -14,7 +14,7 @@ function ReadMoreComponent({ children }: any) {
 
             {!isExpanded && <div className="fade-overlay"></div>}
             {!isExpanded &&
-                <Button className="readmore-button bg-blue-700" onClick={() => setIsExpanded(!isExpanded)}>
+                <Button className="readmore-button bg-[#0660bb]" onClick={() => setIsExpanded(!isExpanded)}>
                     {isExpanded ? "Thu gọn ▲" : "Xem thêm ▼"}
                 </Button>
             }

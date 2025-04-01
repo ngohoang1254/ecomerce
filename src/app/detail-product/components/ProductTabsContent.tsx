@@ -47,7 +47,7 @@ function ProductTabsContent() {
                     * Liên hệ Hotline: <strong>0902763399</strong>
                 </Tabs.Content>
                 <Tabs.Content value="review" className="tab-content">
-                    <div className="w-full bg-blue-300 p-4 flex flex-col gap-4 text-center">
+                    <div className="w-full bg-[#0660bb] p-4 flex flex-col gap-4 text-center">
                         <div>Hiện tại sản phẩm chưa có đánh giá nào hãy là người đầu tiên.</div>
                     </div>
                 </Tabs.Content>
