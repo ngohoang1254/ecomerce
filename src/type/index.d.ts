@@ -8,6 +8,7 @@ export interface ISwiper {
         disableOnInteraction: boolean
     } | boolean
     breakpoints: {
+        300: { slidesPerView: number },
         640: { slidesPerView: number },
         768: { slidesPerView: number },
         1024: { slidesPerView: number },

@@ -8,6 +8,7 @@ import {
     NavigationMenuTrigger,
     NavigationMenuViewport,
 } from "@/components/ui/navigation-menu"
+import Link from "next/link"
 interface IMenu {
     item: {
         label: string,
@@ -28,9 +29,11 @@ export default function MenuComponent({ item }: IMenu) {
                 <NavigationMenuItem>
                     <NavigationMenuTrigger className="hover:text-blue-500 text-black cursor-pointer !border-none! text-base">{item.label}</NavigationMenuTrigger>
                     <NavigationMenuContent className="min-w-[200px]">
-                        {item.element?.map((ele, index) => {
+                        {item.element?.map((ele: any, index) => {
                             return (
-                                <NavigationMenuLink key={index}>{ele.label}</NavigationMenuLink>
+                                <Link href={ele.url} key={index}>
+                                    <NavigationMenuLink key={index}>{ele.label}</NavigationMenuLink>
+                                </Link>
                             )
                         })}
                     </NavigationMenuContent>

@@ -15,14 +15,14 @@ export default function ProductView() {
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
                     {itemProduct.map((item, index) => {
                         return (
-                            <ProductItem {...item} />
+                            <ProductItem {...item} key={index} />
                         )
                     })}
                 </div>
                 : <div className="flex flex-col gap-4 w-full">
                     {itemProduct.map((item, index) => {
                         return (
-                            <ProductItemList {...item} />
+                            <ProductItemList {...item} key={index} />
                         )
                     })}
                 </div>

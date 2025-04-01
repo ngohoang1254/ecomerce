@@ -8,10 +8,13 @@ import { ISwiper } from "@/type";
 import Image from "next/image";
 
 export default function SwiperHome({ component: Component, slidesPerView, autoplay, breakpoints, items, moreSection }: ISwiper) {
+    if (!moreSection) {
+        console.log(breakpoints);
+    }
     return (
         <div className="w-full flex gap-4">
             {moreSection &&
-                <div className="w-auto h-auto">
+                <div className="w-auto h-auto md:block hidden">
                     <Image
                         src={moreSection.imageUrl}
                         width={250}

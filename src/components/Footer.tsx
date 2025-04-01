@@ -1,5 +1,6 @@
 import { MapPin, FileText, Phone, Wrench, Headphones, Mail } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 
 export default function Footer() {
@@ -8,30 +9,41 @@ export default function Footer() {
             <div className="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 px-4">
                 {/* Cột 1 - Thông tin công ty */}
                 <div className="flex flex-col gap-2 font-semibold">
-                    <Image src="/assets/logo_footer.webp" alt="" className="mb-4" width={150} height={100} />
+                    <Image src="/assets/logo.jpeg" alt="" className="mb-4" width={150} height={100} />
                     <div className="flex gap-2">
-                        <MapPin size={20} className="text-red-700" />
-                        <p>531 Đường 3 Tháng 2, P.8, Quận 10, Tp. Hồ Chí Minh</p>
+                        <MapPin size={30} className="text-red-700" />
+                        <p>Số 355-355A, Đường Lê Quang Định, Phường 5, Quận Bình Thạnh</p>
                     </div>
                     <div className="flex gap-2">
                         <FileText size={20} className="text-red-700" />
-                        <p>MST: 0304913178, ngày cấp: 30/03/2007</p>
+                        <p>MST: 0318853338</p>
                     </div>
-                    <div className="flex gap-2">
+                    {/* <div className="flex gap-2">
                         <Phone size={20} className="text-red-700" />
-                        <p >Mua xe: <span className="hover:text-red-500 cursor-pointer">090 276 33 99</span></p>
+                        <p >Mua xe:
+                            <a href="tel:02822355355">
+                                <span className="hover:text-red-500 cursor-pointer">028 22 355 355</span>
+                            </a>
+                        </p>
                     </div>
                     <div className="flex gap-2">
                         <Wrench size={20} className="text-red-700" />
-                        <p>Sửa xe: <span className="hover:text-red-500 cursor-pointer">0909 53 88 23</span></p>
-                    </div>
+                        <p>Sửa xe:
+                            <a href="tel:02822355355">
+                                <span className="hover:text-red-500 cursor-pointer">028 22 355 355</span>
+                            </a>
+                        </p>
+                    </div> */}
                     <div className="flex gap-2">
                         <Headphones size={20} className="text-red-700" />
-                        <p >Tổng đài: <span className="hover:text-red-500 cursor-pointer">1900252633</span></p>
+                        <p >Tổng đài:
+                            <a href="tel:02822355355">
+                                <span className="hover:text-red-500 cursor-pointer">028 22 355 355</span>
+                            </a></p>
                     </div>
                     <div className="flex gap-2">
                         <Mail size={20} className="text-red-700" />
-                        <p className="hover:text-red-500 cursor-pointer">customercare@sapa.com.vn</p>
+                        <p className="hover:text-red-500 cursor-pointer">invoice@nhimotors.com</p>
                     </div>
                     <Image src="/assets/logo_bct.webp" alt="" className=" mt-2" width={200} height={100} />
                 </div>
@@ -50,15 +62,39 @@ export default function Footer() {
                 <div>
                     <h3 className="text-lg font-bold text-white"> SẢN PHẨM</h3>
                     <ul className="mt-2 space-y-1">
-                        <li className="hover:text-red-500 cursor-pointer">Xe Vespa</li>
-                        <li className="hover:text-red-500 cursor-pointer">Xe Piaggio</li>
-                        <li className="hover:text-red-500 cursor-pointer">Phụ tùng phụ kiện</li>
+                        <li className="hover:text-red-500 cursor-pointer">
+                            <Link href="/vespa">
+                                Xe Vespa
+                            </Link>
+                        </li>
+                        <li className="hover:text-red-500 cursor-pointer">
+                            <Link href="/piaggio">
+                                Xe Piaggio
+                            </Link>
+                        </li>
+                        <li className="hover:text-red-500 cursor-pointer">
+                            <Link href="/phu-tung-phu-kien-vespa">
+                                Phụ tùng phụ kiện
+                            </Link>
+                        </li>
                     </ul>
                     <h3 className="text-lg font-bold text-white mt-4"> DỊCH VỤ</h3>
                     <ul className="mt-2 space-y-1">
-                        <li className="hover:text-red-500 cursor-pointer">Chính sách bảo hành</li>
-                        <li className="hover:text-red-500 cursor-pointer">Trung tâm Bảo hành Bảo dưỡng</li>
-                        <li className="hover:text-red-500 cursor-pointer">Sơn xe Vespa</li>
+                        <li className="hover:text-red-500 cursor-pointer">
+                            <Link href="/chinh-sach-bao-hanh">
+                                Chính sách bảo hành
+                            </Link>
+                        </li>
+                        <li className="hover:text-red-500 cursor-pointer">
+                            <Link href="/bao-hanh-bao-duong-vespa">
+                                Trung tâm Bảo hành Bảo dưỡng
+                            </Link>
+                        </li>
+                        <li className="hover:text-red-500 cursor-pointer">
+                            <Link href="/son-xe-vespa">
+                                Sơn xe Vespa
+                            </Link>
+                        </li>
                     </ul>
                 </div>
 
@@ -66,13 +102,21 @@ export default function Footer() {
                 <div>
                     <h3 className="text-lg font-bold text-white">HỖ TRỢ KHÁCH HÀNG</h3>
                     <ul className="mt-2 space-y-1">
-                        <li className="hover:text-red-500 cursor-pointer">Phương thức giao hàng</li>
-                        <li className="hover:text-red-500 cursor-pointer">Phương thức thanh toán</li>
+                        <li className="hover:text-red-500 cursor-pointer">
+                            <Link href="/">
+                                Phương thức giao hàng
+                            </Link>
+                        </li>
+                        <li className="hover:text-red-500 cursor-pointer">
+                            <Link href="/">
+                                Phương thức thanh toán
+                            </Link>
+                        </li>
                         <li className="hover:text-red-500 cursor-pointer">Chính sách bảo mật</li>
                         <li className="hover:text-red-500 cursor-pointer">Điều khoản sử dụng</li>
                     </ul>
                 </div>
             </div>
-        </footer>
+        </footer >
     );
 }

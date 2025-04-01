@@ -3,126 +3,82 @@
 import Image from "next/image"
 import MenuComponent from "./Menu"
 import MenuMobile from "./MenuMobile"
+import Link from "next/link";
 export default function Header() {
     const item = [
         {
             label: "Xe Vespa",
-            value: "#",
+            value: "vespa",
             element: [
-                {
-                    label: "Vespa GTS",
-                    value: "#",
-                },
-                {
-                    label: "Vespa GTV",
-                    value: "#",
-                }
-            ]
+                { label: "Vespa GTS", value: "vespa-gts", url: "/vespa" },
+                { label: "Vespa GTV", value: "vespa-gtv", url: "/vespa" },
+            ],
         },
         {
             label: "Xe PIAGGIO",
-            value: "#",
+            value: "piaggio",
             element: [
-                {
-                    label: "PIAGGIO Liberty",
-                    value: "#",
-                },
-                {
-                    label: "PIAGGIO Meddy",
-                    value: "#",
-                }
-            ]
+                { label: "PIAGGIO Liberty", value: "piaggio-liberty", url: "/liberty" },
+                { label: "PIAGGIO Meddy", value: "piaggio-meddy", url: "/liberty" },
+            ],
         },
         {
             label: "Tin tức & khuyến mãi",
-            value: "#",
+            value: "news-promotions",
             element: [
-                {
-                    label: "Bảng giá vespa",
-                    value: "#",
-                },
-                {
-                    label: "Khuyến mãi",
-                    value: "#",
-                },
-                {
-                    label: "Tin tức",
-                    value: "#",
-                }
-            ]
+                { label: "Bảng giá vespa", value: "price-vespa", url: "/bang-gia-vespa" },
+                { label: "Khuyến mãi", value: "promotions" },
+                { label: "Tin tức", value: "news" },
+            ],
         },
         {
             label: "Phụ tùng phụ kiện",
-            value: "#",
+            value: "accessories",
             element: [
-                {
-                    label: "Phụ kiện",
-                    value: "#",
-                },
-                {
-                    label: "Phụ tùng",
-                    value: "#",
-                },
-                {
-                    label: "Giao hàng toàn quốc",
-                    value: "#",
-                }
-            ]
+                { label: "Phụ kiện", value: "accessory", url: "/phu-kien-vespa" },
+                { label: "Phụ tùng", value: "spare-parts", url: "/phu-tung-vespa" },
+                { label: "Giao hàng toàn quốc", value: "nationwide-shipping", url: "/giao-hang-vespa" },
+            ],
         },
         {
             label: "Dịch vụ",
-            value: "#",
+            value: "services",
             element: [
-                {
-                    label: "Chính sách bảo hành",
-                    value: "#",
-                },
-                {
-                    label: "Trung tâm bảo hành bảo dưỡng",
-                    value: "#",
-                },
-                {
-                    label: "Sơn xe Vespa",
-                    value: "#",
-                }
-            ]
+                { label: "Chính sách bảo hành", value: "warranty-policy", url: "/chinh-sach-bao-hanh" },
+                { label: "Trung tâm bảo hành bảo dưỡng", value: "service-center", url: "/bao-hanh-bao-duong-vespa" },
+                { label: "Sơn xe Vespa", value: "vespa-painting", url: "/son-xe-vespa" },
+            ],
         },
         {
             label: "Mua xe trả góp",
-            value: "#",
+            value: "installment-purchase",
             element: [
-                {
-                    label: "Trả góp HD",
-                    value: "#",
-                },
-                {
-                    label: "Trả góp Shinhan",
-                    value: "#",
-                },
-                {
-                    label: "Trả góp Payoo",
-                    value: "#",
-                }
-            ]
+                { label: "Trả góp HD", value: "installment-hd", url: "/tra-gop-voi-hd-saigon" },
+                { label: "Trả góp Shinhan", value: "installment-shinhan", url: "/tra-gop-voi-shinhan" },
+                { label: "Trả góp Payoo", value: "installment-payoo", url: "/tra-gop-voi-sacombank" },
+            ],
         },
         {
             label: "Showroom",
-            value: "#"
+            value: "showroom",
+            url: "/showroom"
         },
         {
             label: "Liên hệ",
-            value: "#"
-        }
-    ]
+            value: "contact",
+        },
+    ];
     return (
         <div className="p-4 w-full h-full bg-white sticky top-0 z-50">
             <div className="text-black font-bold cursor-pointer flex-wrap hidden lg:flex justify-center">
-                <Image src="/assets/logo.jpeg" width={200} height={100} alt="logo" />
+                <Link href="/" passHref>
+                    <Image src="/assets/logo.jpeg" width={200} height={100} alt="logo" />
+                </Link>
                 {item.map((ele: any, index) => {
                     return <MenuComponent item={ele} key={index} />
                 })}
             </div>
             <MenuMobile />
-        </div>
+        </div >
     )
 }

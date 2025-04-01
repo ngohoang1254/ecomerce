@@ -1,8 +1,3 @@
-import BestSelling from "@/components/BestSelling";
-import Category from "@/components/Category";
-import Footer from "@/components/Footer";
-import Header from "@/components/Header";
-import Hero from "@/components/Hero";
 import NewsList from "@/components/NewsList";
 import Partner from "@/components/Partner";
 import Slider from "@/components/slider";
@@ -26,13 +21,14 @@ export default function Home() {
         }}
         breakpoints={{
           1440: {
-            slidesPerView: 6
+            slidesPerView: 5
           },
           1024: {
-            slidesPerView: 5
+            slidesPerView: 4
           },
           768: { slidesPerView: 3 },
           640: { slidesPerView: 2 },
+          300: { slidesPerView: 1 },
         }}
         items={itemCategory}
       />
@@ -53,6 +49,7 @@ export default function Home() {
           },
           768: { slidesPerView: 3 },
           640: { slidesPerView: 2 },
+          300: { slidesPerView: 2 },
         }}
         items={itemProduct}
         moreSection={{
@@ -76,6 +73,7 @@ export default function Home() {
           },
           768: { slidesPerView: 3 },
           640: { slidesPerView: 2 },
+          300: { slidesPerView: 2 },
         }}
         items={itemProduct}
         moreSection={{
@@ -99,6 +97,7 @@ export default function Home() {
           },
           768: { slidesPerView: 3 },
           640: { slidesPerView: 2 },
+          300: { slidesPerView: 2 },
         }}
         items={itemProduct}
         moreSection={{
@@ -122,6 +121,7 @@ export default function Home() {
           },
           768: { slidesPerView: 3 },
           640: { slidesPerView: 2 },
+          300: { slidesPerView: 2 },
         }}
         items={itemProduct}
         moreSection={{

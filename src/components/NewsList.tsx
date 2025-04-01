@@ -1,5 +1,6 @@
-import { itemNews } from "@/const";
+import { itemNews, itemProduct } from "@/const";
 import Image from "next/image";
+import Slider from "./slider";
 
 export default function NewsList() {
     return (
@@ -8,7 +9,7 @@ export default function NewsList() {
                 <div className="text-2xl font-bold text-white bg-blue-500 rounded-tl-sm rounded-tr-sm px-4 py-2">
                     TIN TỨC
                 </div>
-                <div className="grid grid-cols-4 md:grid-cols-3 lg:grid-cols-4 gap-8">
+                {/* <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
                     {itemNews.map((item, index) => {
                         return (
                             <div className="flex flex-col gap-4 group cursor-pointer" key={item.imageUrl} >
@@ -25,7 +26,32 @@ export default function NewsList() {
 
                         )
                     })}
-                </div>
+                </div> */}
+                <Slider
+                    hideTitle={true}
+                    title={"Phụ tùng Vespa - Piaggio"}
+                    componentString={"NewsItem"}
+                    slidesPerView={4}
+                    autoplay={{
+                        delay: 3000,
+                        disableOnInteraction: false
+                    }}
+                    breakpoints={{
+                        1440: {
+                            slidesPerView: 4
+                        },
+                        1024: {
+                            slidesPerView: 4
+                        },
+                        768: { slidesPerView: 3 },
+                        640: { slidesPerView: 2 },
+                        300: { slidesPerView: 1 },
+                    }}
+                    items={itemNews}
+                    moreSection={{
+                        imageUrl: "/assets/product/section_product_images1.webp"
+                    }}
+                />
             </div>
         </div>
     )
