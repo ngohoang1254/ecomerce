@@ -27,6 +27,7 @@ export default function DetailProduct() {
                     },
                     768: { slidesPerView: 3 },
                     640: { slidesPerView: 2 },
+                    300: { slidesPerView: 1 }
                 }}
                 items={itemProduct}
             />
