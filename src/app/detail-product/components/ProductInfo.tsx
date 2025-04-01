@@ -31,7 +31,7 @@ export default function ProductInfo() {
                 <div className="flex">
                     <div className="px-4 cursor-pointer flex items-center text-gray-600 border-default"
                         onClick={() => {
-                            let newAmounts = parseInt(amount) - 1;
+                            const newAmounts = parseInt(amount) - 1;
                             if (newAmounts > 0) {
                                 setAmount(newAmounts.toString())
                             }
@@ -41,7 +41,7 @@ export default function ProductInfo() {
                     <Input className='max-w-[100px] rounded-none text-center border-default' value={amount} readOnly />
                     <div className="border-default px-4 cursor-pointer flex items-center text-gray-600"
                         onClick={() => {
-                            let newAmounts = parseInt(amount) + 1;
+                            const newAmounts = parseInt(amount) + 1;
                             if (newAmounts > 0) {
                                 setAmount(newAmounts.toString())
                             }
