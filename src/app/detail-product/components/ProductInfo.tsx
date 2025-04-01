@@ -3,11 +3,13 @@ import InputNumber from 'rc-input-number';
 import { Input } from "@/components/ui/input"
 import { Button } from '@/components/ui/button';
 import { FaFacebook } from "react-icons/fa";
+import { useState } from 'react';
 
 
 export default function ProductInfo() {
+    const [amount, setAmount] = useState("1");
     return (
-        <div className="flex flex-col gap-2">
+        <div className="flex flex-col gap-2 px-4">
             <div className="text-2xl font-bold text-black">
                 Liberty STD White Luna
             </div>
@@ -27,9 +29,24 @@ export default function ProductInfo() {
             </div>
             <div className="flex gap-4">
                 <div className="flex">
-                    <div className="border px-4 cursor-pointer flex items-center text-gray-600">-</div>
-                    <Input className='max-w-[100px] rounded-none text-center' />
-                    <div className="border px-4 cursor-pointer flex items-center text-gray-600">+</div>
+                    <div className="px-4 cursor-pointer flex items-center text-gray-600 border-default"
+                        onClick={() => {
+                            let newAmounts = parseInt(amount) - 1;
+                            if (newAmounts > 0) {
+                                setAmount(newAmounts.toString())
+                            }
+                        }}
+
+                    >-</div>
+                    <Input className='max-w-[100px] rounded-none text-center border-default' value={amount} readOnly />
+                    <div className="border-default px-4 cursor-pointer flex items-center text-gray-600"
+                        onClick={() => {
+                            let newAmounts = parseInt(amount) + 1;
+                            if (newAmounts > 0) {
+                                setAmount(newAmounts.toString())
+                            }
+                        }}
+                    >+</div>
                 </div>
                 <Button className="font-bold bg-[#0660bb] cursor-pointer px-8">Đặt hàng</Button>
             </div>

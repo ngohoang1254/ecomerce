@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function ProductImage() {
     return (
-        <div className="border self-start">
+        <div className="border self-start flex flex-col">
             {/* <Image src="/assets/product/liberty-std-white-luna.webp" width={300} height={300} alt=""
                 className="w-full h-auto"
             /> */}

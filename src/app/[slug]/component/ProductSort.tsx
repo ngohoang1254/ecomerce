@@ -14,7 +14,7 @@ import { useViewStore } from '@/store/useProductView';
 const SortingViewInterface = () => {
     const { viewMode, setViewMode } = useViewStore();
     return (
-        <div className="flex items-center justify-between w-full p-2 border rounded-md bg-white">
+        <div className="flex items-center justify-between w-full p-2 border-default rounded-md bg-white">
             <div className="flex gap-1">
                 <Button
                     variant={viewMode === "grid" ? "default" : "outline"}
@@ -36,12 +36,12 @@ const SortingViewInterface = () => {
 
             <div className="flex items-center gap-2">
                 <span className="text-sm font-medium">Sắp xếp:</span>
-                <Select defaultValue="default">
-                    <SelectTrigger className="w-40 h-10 border-gray-300 focus:ring-blue-500 focus:border-blue-500">
+                <Select defaultValue="price-asc">
+                    <SelectTrigger className="w-40 h-10 border-default">
                         <SelectValue placeholder="Sắp xếp" />
                     </SelectTrigger>
                     <SelectContent className="bg-white">
-                        <SelectItem value="default">Sắp xếp</SelectItem>
+                        {/* <SelectItem value="default">Sắp xếp</SelectItem> */}
                         <SelectItem value="price-asc">Giá tăng dần</SelectItem>
                         <SelectItem value="price-desc">Giá giảm dần</SelectItem>
                         <SelectItem value="newest">Mới nhất</SelectItem>
