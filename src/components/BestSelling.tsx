@@ -23,7 +23,7 @@ export default function BestSelling() {
             price: "84.600.000₫"
         }
     ]
-    return <div className="container mx-auto p-8 flex justify-center">
+    return <div className="container mx-auto px-4 py-4 flex justify-center">
         <div className="container bestSelling-content p-8">
             <Carousel />
         </div>

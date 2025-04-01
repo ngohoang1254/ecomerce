@@ -7,12 +7,10 @@ import ProductItemList from "./ProductItemList";
 
 export default function ProductView() {
     const { viewMode, setViewMode } = useViewStore();
-
     return (
-
         <div className="flex items-center justify-between w-full rounded-md bg-white">
             {viewMode === "grid" ?
-                <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                     {itemProduct.map((item, index) => {
                         return (
                             <ProductItem {...item} key={index} />

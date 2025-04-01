@@ -8,7 +8,7 @@ import Image from "next/image"
 
 export default function ProductList() {
     return (
-        <div className="w-full border-[1px] flex flex-col">
+        <div className="w-full border-[1px] border-[#818589] border-solid flex flex-col border-">
             <div className="flex w-full">
                 <Image src="/assets/icon_vespa2.png" width={50} height={50} alt="" />
                 <div className="bg-[#0660bb] cursor-pointer flex-1 flex items-center font-bold text-xl p-2 text-white">Sản phẩm</div>
