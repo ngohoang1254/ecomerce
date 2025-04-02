@@ -1,31 +1,31 @@
 export const itemCategory = [
     {
-        imageUrl: "/assets/category/section_category_title2.webp",
+        imageUrl: "/assets/product/vespa1.webp",
         button: "Xe Vespa",
         url: "#"
     },
     {
-        imageUrl: "/assets/category/section_category_title3.webp",
+        imageUrl: "/assets/category/section_category_title3.avif",
         button: "Mua xe trả góp",
         url: "#"
     },
     {
-        imageUrl: "/assets/category/section_category_title4.webp",
+        imageUrl: "/assets/liberty/liberty1.webp",
         button: "Xe PIAGGIO",
         url: "#"
     },
     {
-        imageUrl: "/assets/category/section_category_title5.webp",
+        imageUrl: "/assets/category/section_category_title3.jpeg",
         button: "Đặt lịch sửa chữa",
         url: "#"
     },
     {
-        imageUrl: "/assets/category/section_category_title6.webp",
+        imageUrl: "/assets/category/section_category_title4.jpg",
         button: "Phụ kiện - Phụ tùng",
         url: "#"
     },
     {
-        imageUrl: "/assets/category/section_category_title1.webp",
+        imageUrl: "/assets/category/section_category_title1.avif",
         button: "Khuyến mãi",
         url: "#"
     },
@@ -62,7 +62,7 @@ export const itemCategory = [
 export const productList = [
     {
         imageUrl: "/assets/liberty/liberty1.webp",
-        name: "LIBERTY STD WHITE LUNA",
+        name: "LIBERTY Z",
         id: 1,
         type: "liberty",
         price: "57.500.000₫"
@@ -76,7 +76,7 @@ export const productList = [
     },
     {
         imageUrl: "/assets/liberty/liberty3.webp",
-        name: "Liberty S Nero Meteora",
+        name: "Liberty White 2025",
         id: 3,
         type: "liberty",
         price: "57.900.000₫"
@@ -90,31 +90,31 @@ export const productList = [
     },
     {
         imageUrl: "/assets/accessory/accessory1.jpg",
-        name: "Bộ KIT kết nối PMP3 MIA",
+        name: "Giá đèo hàng sau",
         id: 5,
         type: "accessory",
-        price: "756.000₫"
+        price: "1.756.000₫"
     },
     {
-        imageUrl: "/assets/accessory/accessory2.jpg",
-        name: "Màn hình TFT Vespa Sprint và Primavera",
+        imageUrl: "/assets/accessory/accessory2.webp",
+        name: "Mũ bảo hiểm Vespa cờ Ý",
         id: 6,
         type: "accessory",
         price: "100.000₫"
     },
     {
-        imageUrl: "/assets/accessory/accessory3.jpg",
-        name: "Bộ PMP3 MIA gắn trên xe Liberty",
+        imageUrl: "/assets/accessory/accessory3.webp",
+        name: "Bảo vệ chắn bùn trước đen",
         id: 7,
         type: "accessory",
-        price: "2.434.000₫"
+        price: "558.000₫"
     },
     {
         imageUrl: "/assets/accessory/accessory4.webp",
-        name: "Gác chân Vespa Sprint - Prima",
+        name: "Tấm bọc chân Sprint",
         id: 8,
         type: "accessory",
-        price: "1.500.000₫"
+        price: "3.500.000₫"
     },
     {
         imageUrl: "/assets/accessary/accessary1.webp",
@@ -145,35 +145,35 @@ export const productList = [
         price: "620.000₫"
     },
     {
-        imageUrl: "/assets/liberty.webp",
-        name: "Liberty Z Urban Sky",
-        price: "59.300.000₫",
+        imageUrl: "/assets/product/vespa1.webp",
+        name: "Vespa GTS SUPER SPORT 300 WHITE INNOCENZA",
+        price: "129.000.000₫",
         type: "vespa",
         id: 13,
     },
     {
-        imageUrl: "/assets/vespa1.webp",
-        name: "Vespa Sprint Carbon 125 - Black",
-        price: "84.600.000₫",
+        imageUrl: "/assets/product/vespa2.png",
+        name: "Vespa Sprint 125 BLUE AUDACE",
+        price: "81.000.000₫",
         type: "vespa",
         id: 14,
     },
     {
-        imageUrl: "/assets/vespa2.webp",
-        name: "Vespa Sprint S 150 White",
-        price: "97.800.000₫",
+        imageUrl: "/assets/product/vespa3.png",
+        name: "Vespa Sprint 125 BLUE ESTROVERSO",
+        price: "81.000.000₫",
         type: "vespa",
         id: 17,
     },
     {
-        imageUrl: "/assets/vespa1.webp",
-        name: "Vespa Sprint ABS 125 Rosso Scarlatto",
+        imageUrl: "/assets/product/vespa4.png",
+        name: "Vespa Sprint S 125 ORANGE TRAMONTO",
         price: "84.600.000₫",
         type: "vespa",
         id: 15,
     },
     {
-        imageUrl: "/assets/liberty.webp",
+        imageUrl: "/assets/product/product3.webp",
         name: "Liberty Z Urban Sky",
         price: "59.300.000₫",
         type: "vespa",

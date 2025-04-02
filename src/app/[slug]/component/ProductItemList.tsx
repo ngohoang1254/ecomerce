@@ -11,8 +11,8 @@ export default function ProductItemList({ name, price, imageUrl }: IProduct) {
             />
             <div className="flex flex-col gap-8">
                 <div className="text-base cursor-pointer py-2">
-                    <div className="text-black group-hover:text-blue-500 text-2xl font-bold">{name}</div>
-                    <div className="text-blue font-bold text-blue-600">{price}</div>
+                    <div className="text-black group-hover:text-[#0660bb] text-2xl font-bold">{name}</div>
+                    <div className="text-blue font-bold text-[#0660bb]">{price}</div>
                 </div>
                 <div className="flex gap-2 mt-4">
                     <ButtonCart />

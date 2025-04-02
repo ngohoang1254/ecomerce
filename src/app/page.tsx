@@ -28,7 +28,7 @@ export default function Home() {
           },
           768: { slidesPerView: 3 },
           640: { slidesPerView: 2 },
-          300: { slidesPerView: 1 },
+          300: { slidesPerView: 2 },
         }}
         items={itemCategory}
       />
@@ -45,9 +45,9 @@ export default function Home() {
             slidesPerView: 4
           },
           1024: {
-            slidesPerView: 4
+            slidesPerView: 2
           },
-          768: { slidesPerView: 3 },
+          768: { slidesPerView: 2 },
           640: { slidesPerView: 2 },
           300: { slidesPerView: 2 },
         }}
@@ -71,9 +71,9 @@ export default function Home() {
             slidesPerView: 4
           },
           1024: {
-            slidesPerView: 4
+            slidesPerView: 2
           },
-          768: { slidesPerView: 3 },
+          768: { slidesPerView: 2 },
           640: { slidesPerView: 2 },
           300: { slidesPerView: 2 },
         }}
@@ -97,9 +97,9 @@ export default function Home() {
             slidesPerView: 4
           },
           1024: {
-            slidesPerView: 4
+            slidesPerView: 2
           },
-          768: { slidesPerView: 3 },
+          768: { slidesPerView: 2 },
           640: { slidesPerView: 2 },
           300: { slidesPerView: 2 },
         }}
@@ -123,9 +123,9 @@ export default function Home() {
             slidesPerView: 4
           },
           1024: {
-            slidesPerView: 4
+            slidesPerView: 2
           },
-          768: { slidesPerView: 3 },
+          768: { slidesPerView: 2 },
           640: { slidesPerView: 2 },
           300: { slidesPerView: 2 },
         }}

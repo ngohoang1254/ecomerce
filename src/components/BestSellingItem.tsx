@@ -11,7 +11,14 @@ interface IBestSellingItem {
 export default function BestSellingItem({ productInfo }: IBestSellingItem) {
     return (
         <div className="bg-white p-2 md:p-4 flex w-full md:max-w-[400px] max-h-[200px]">
-            <Image src={productInfo?.imageUrl} alt="" width={130} height={130} />
+            <div className="relative w-[130px] h-[130px]">
+                <Image
+                    src={productInfo?.imageUrl}
+                    alt=""
+                    fill
+                    className="object-cover"
+                />
+            </div>
             <div className="text-xl cursor-pointer ml-4">
                 <div className="text-black hover:text-blue-500 truncate w-[200px]">{productInfo?.name}</div>
                 <div className="text-blue font-bold text-blue-600">{productInfo?.price}</div>

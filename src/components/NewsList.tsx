@@ -48,9 +48,6 @@ export default function NewsList() {
                         300: { slidesPerView: 1 },
                     }}
                     items={itemNews}
-                    moreSection={{
-                        imageUrl: "/assets/product/section_product_images1.webp"
-                    }}
                 />
             </div>
         </div>

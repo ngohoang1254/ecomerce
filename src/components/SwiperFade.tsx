@@ -58,15 +58,15 @@ export default function Banner() {
                 className="w-full h-[300px] md:h-[500px] xl:h-[700px]"
             >
                 <SwiperSlide className="relative w-full h-full">
-                    <Image src="/assets/slider_2.webp" alt="Slide 1" fill />
+                    <Image src="/assets/slider1.jpg" alt="Slide 1" fill />
                 </SwiperSlide>
                 <SwiperSlide className="relative w-full h-full">
-                    <Image src="/assets/slider_3.webp" alt="Slide 2" fill />
+                    <Image src="/assets/slider3.webp" alt="Slide 2" fill />
                 </SwiperSlide>
             </Swiper>
             <div className="hidden xl:flex absolute bg-[rgba(0,0,0,0.75)] bg-opacity-50 w-[300px] h-full top-0 left-[10%] z-10 flex-col justify-center p-4 gap-4 ">
                 <div className="text-2xl text-white font-bold">Tìm kiếm xe bạn thích</div>
-                <p className="text-[#888b86] font-semibold">Piaggio Sapa - Nhà phân phối Vespa, Piaggio chính hãng tại Việt Nam. Hơn 30 năm đồng hành và phát triển cùng tập đoàn Piagigo Italia.</p>
+                <p className="text-[#888b86] font-semibold">Nhí Motors - Nhà phân phối Vespa, Piaggio chính hãng tại Việt Nam. Hơn 30 năm đồng hành và phát triển cùng tập đoàn Piagigo Italia.</p>
                 <Input type="text" placeholder="Nhập tên xe" className="bg-white h-[48px]" />
                 <Select>
                     <SelectTrigger className="w-full bg-white text-black border border-gray-300 h-12"
