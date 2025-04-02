@@ -111,7 +111,7 @@ export default function Banner() {
                         </Select>
                         <Button className="h-12 bg-[#0660bb] font-bold"
                             onClick={() => {
-
+                                router.push("/danh-sach")
                             }}
                         >
                             <FaSearch color="white" />
