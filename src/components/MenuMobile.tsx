@@ -104,7 +104,7 @@ export default function MenuMobile() {
                                             <div className="flex flex-col p-2 gap-2">
                                                 {ele.element.map((subItem, index) => (
                                                     <Link key={index} href={subItem.url || "#"}>
-                                                        <div className="hover:text-blue-500 cursor-pointer">
+                                                        <div className="hover:text-blue-500 focus:text-[#0660bb] cursor-pointer">
                                                             {subItem.label}
                                                         </div>
                                                     </Link>
@@ -114,7 +114,7 @@ export default function MenuMobile() {
                                     </AccordionItem>
                                 ) : (
                                     <Link key={ele.value} href={ele.url || "#"}>
-                                        <div className="hover:text-blue-500 cursor-pointer py-2 text-sm font-semibold">{ele.label}</div>
+                                        <div className="hover:text-blue-500 cursor-pointer py-2 text-sm font-semibold focus:text-[#0660bb]">{ele.label}</div>
                                     </Link>
                                 )
                             ))}
