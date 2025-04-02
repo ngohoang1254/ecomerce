@@ -4,10 +4,15 @@ import ProductDetail from "./components/ProductDetail";
 // import { itemProduct } from "@/const";
 import Slider from "@/components/slider";
 import { productList } from "@/const";
+type paramsType = Promise<{ id: string }>;
 
-export default function DetailProduct({ params }: { params: { id: string } }) {
-    console.log(params.id);
-    const productItems = productList.find((item) => item.id === Number(params.id));
+
+export default async function DetailProduct({ params, }: {
+    params: paramsType;
+}) {
+    const { id } = await params;
+
+    const productItems = productList.find((item) => item.id === Number(id));
     return (
         <div className="w-full flex flex-col gap-8">
             <Hero />

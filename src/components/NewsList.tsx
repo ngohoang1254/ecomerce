@@ -1,4 +1,4 @@
-import { itemNews, itemProduct } from "@/const";
+import { itemNews } from "@/const";
 import Image from "next/image";
 import Slider from "./slider";
 

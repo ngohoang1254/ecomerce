@@ -1,6 +1,7 @@
 import BestSellingItem from "@/components/BestSellingItem";
 import Image from "next/image";
 import HotProductItem from "./HotProductItem";
+import { productList } from "@/const";
 interface IHotProduct {
     height?: number
 }
@@ -36,7 +37,7 @@ export default function HotProduct({ height }: IHotProduct) {
                 <div className="bg-[#0660bb] cursor-pointer flex-1 flex items-center font-bold text-xl p-2 text-white">Sản phẩm hot</div>
             </div>
             <div className="flex flex-col p-4 gap-4">
-                {item.map((ele, index) => {
+                {productList.map((ele, index) => {
                     return (
                         <HotProductItem productInfo={ele} key={index} />
                     )
