@@ -5,6 +5,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import BestSellingItem from "./BestSellingItem";
+import { productList } from "@/const";
 
 export default function Carousel() {
     const item = [
@@ -45,7 +46,7 @@ export default function Carousel() {
                 1024: { slidesPerView: 3 },
             }}
         >
-            {item?.map((ele, index) => {
+            {productList?.map((ele, index) => {
                 return <SwiperSlide>
                     <BestSellingItem productInfo={ele} />
                 </SwiperSlide>

@@ -25,5 +25,7 @@ export interface ISwiper {
 export interface IProduct {
     name: string,
     price: string,
-    imageUrl: string
+    imageUrl: string,
+    id: number
+    type: string
 }

@@ -3,7 +3,7 @@ import Partner from "@/components/Partner";
 import Slider from "@/components/slider";
 import Banner from "@/components/SwiperFade";
 import FadeSwiper from "@/components/SwiperFade";
-import { itemCategory, itemProduct } from "@/const";
+import { itemCategory, productList } from "@/const";
 import Image from "next/image";
 
 export default function Home() {
@@ -51,7 +51,9 @@ export default function Home() {
           640: { slidesPerView: 2 },
           300: { slidesPerView: 2 },
         }}
-        items={itemProduct}
+        items={productList.filter((item, index) => {
+          return item.type === "vespa"
+        })}
         moreSection={{
           imageUrl: "/assets/product/section_product_images1.webp"
         }}
@@ -75,9 +77,11 @@ export default function Home() {
           640: { slidesPerView: 2 },
           300: { slidesPerView: 2 },
         }}
-        items={itemProduct}
+        items={productList.filter((item, index) => {
+          return item.type === "liberty"
+        })}
         moreSection={{
-          imageUrl: "/assets/product/section_product_images1.webp"
+          imageUrl: "/assets/liberty/liberty-more-section.jpeg"
         }}
       />
       <Slider
@@ -99,9 +103,11 @@ export default function Home() {
           640: { slidesPerView: 2 },
           300: { slidesPerView: 2 },
         }}
-        items={itemProduct}
+        items={productList.filter((item, index) => {
+          return item.type === "accessory"
+        })}
         moreSection={{
-          imageUrl: "/assets/product/section_product_images1.webp"
+          imageUrl: "/assets/accessory/moresection.webp"
         }}
       />
       <Slider
@@ -123,9 +129,11 @@ export default function Home() {
           640: { slidesPerView: 2 },
           300: { slidesPerView: 2 },
         }}
-        items={itemProduct}
+        items={productList.filter((item, index) => {
+          return item.type === "accessary"
+        })}
         moreSection={{
-          imageUrl: "/assets/product/section_product_images1.webp"
+          imageUrl: "/assets/accessary/moresection.jpeg"
         }}
       />
 

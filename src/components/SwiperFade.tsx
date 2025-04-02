@@ -16,7 +16,10 @@ import {
     SelectValue,
 } from "@/components/ui/select"
 import { Button } from "./ui/button";
+import { useRouter } from 'next/navigation';
+
 export default function Banner() {
+    const router = useRouter();
     const categories = [
         { value: "3168264", label: "Vespa GTV" },
         { value: "3047353", label: "Piaggio Beverly" },
@@ -68,7 +71,6 @@ export default function Banner() {
                 <Select>
                     <SelectTrigger className="w-full bg-white text-black border border-gray-300 h-12"
                         style={{ height: "48px" }}
-
                     >
                         <SelectValue placeholder="Chọn danh mục" />
                     </SelectTrigger>
@@ -80,7 +82,11 @@ export default function Banner() {
                         })}
                     </SelectContent>
                 </Select>
-                <Button className="bg-[#0660bb] hover:bg-[#0660bb] cursor-pointer">Tìm kiếm</Button>
+                <Button className="bg-[#0660bb] hover:bg-[#0660bb] cursor-pointer"
+                    onClick={() => {
+                        router.push("/danh-sach")
+                    }}
+                >Tìm kiếm</Button>
             </div>
             {/* Menu search mobile */}
             <div className="w-full bg-[rgba(0,0,0,0.75)] p-4 block xl:hidden">

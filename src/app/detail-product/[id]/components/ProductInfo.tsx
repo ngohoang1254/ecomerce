@@ -6,12 +6,13 @@ import { FaFacebook } from "react-icons/fa";
 import { useState } from 'react';
 
 
-export default function ProductInfo() {
+export default function ProductInfo({ productItems }: any) {
     const [amount, setAmount] = useState("1");
+    console.log(productItems);
     return (
         <div className="flex flex-col gap-2 px-4">
             <div className="text-2xl font-bold text-black">
-                Liberty STD White Luna
+                {productItems?.name}
             </div>
             <div className="flex gap-2">
                 <div>
@@ -22,10 +23,10 @@ export default function ProductInfo() {
                 </div>
             </div>
             <div>
-                <span>Mã SKU: <span className="text-blue-500 cursor-pointer">libertystd</span></span>
+                <span>Mã SKU: <span className="text-blue-500 cursor-pointer">{productItems?.id}</span></span>
             </div>
             <div className="text-4xl font-bold text-blue-800">
-                57.500.000₫
+                {productItems?.price}
             </div>
             <div className="flex gap-4">
                 <div className="flex">

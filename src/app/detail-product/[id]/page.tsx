@@ -1,14 +1,17 @@
 import Hero from "@/components/Hero";
 import ProductContent from "./components/ProductContent";
 import ProductDetail from "./components/ProductDetail";
-import { itemProduct } from "@/const";
+// import { itemProduct } from "@/const";
 import Slider from "@/components/slider";
+import { productList } from "@/const";
 
-export default function DetailProduct() {
+export default function DetailProduct({ params }: { params: { id: string } }) {
+    console.log(params.id);
+    const productItems = productList.find((item) => item.id === Number(params.id));
     return (
         <div className="w-full flex flex-col gap-8">
             <Hero />
-            <ProductContent />
+            <ProductContent productItems={productItems} />
             <ProductDetail />
             <Slider
                 title={"Sản phẩm liên quan"}
@@ -29,7 +32,7 @@ export default function DetailProduct() {
                     640: { slidesPerView: 2 },
                     300: { slidesPerView: 1 }
                 }}
-                items={itemProduct}
+                items={productList}
             />
         </div>
     )

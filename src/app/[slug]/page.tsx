@@ -18,7 +18,6 @@ export default function Product() {
             <Hero />
             <BestSelling />
             <ProductContent />
-
             <Sheet>
                 <SheetTrigger>
                     <Button className="absolute top-[20%] right-0 bg-[#0660bb] height-[40px]"

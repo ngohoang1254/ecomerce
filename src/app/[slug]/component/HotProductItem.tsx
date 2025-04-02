@@ -1,3 +1,6 @@
+import ButtonEye from "@/components/ButtonEye";
+import { Button } from "@/components/ui/button";
+import { Eye } from "lucide-react";
 import Image from "next/image";
 
 interface IHostProduct {
@@ -14,6 +17,12 @@ export default function HotProductItem({ productInfo }: IHostProduct) {
             <div className="text-lg cursor-pointer">
                 <div className="text-black hover:text-blue-500 font-bold">{productInfo?.title}</div>
                 <div className="text-blue font-bold text-blue-600 text-base">{productInfo?.price}</div>
+                <div className="flex gap-2">
+                    <Button className="bg-[#0660bb]">Mua hàng</Button>
+                    <Button variant="default" className="bg-[#0660bb] cursor-pointer px-2">
+                        <Eye size={20} />
+                    </Button>
+                </div>
             </div>
         </div>
     )

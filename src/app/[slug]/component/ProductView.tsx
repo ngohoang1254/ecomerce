@@ -1,16 +1,20 @@
 "use client"
-import Product from "@/components/Product";
-import { itemProduct } from "@/const";
 import { useViewStore } from "@/store/useProductView";
 import ProductItem from "./ProductItem";
 import ProductItemList from "./ProductItemList";
+import { useSearchParams } from 'next/navigation'
+import { productList } from "@/const";
+
 
 export default function ProductView() {
     const { viewMode, setViewMode } = useViewStore();
+    const searchParams = useSearchParams();
+    const type = searchParams.get('type');
+    let itemProduct = productList;
     return (
         <div className="flex items-center justify-between w-full rounded-md bg-white">
             {viewMode === "grid" ?
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
                     {itemProduct.map((item, index) => {
                         return (
                             <ProductItem {...item} key={index} />
