@@ -183,23 +183,23 @@ export const productList = [
 
 export const itemNews = [
     {
-        imageUrl: "/assets/news/news-1.webp",
-        title: "Ngày vàng Vespa Sapa Ưu đãi ngay 3.500.000đ",
+        imageUrl: "/assets/news/news-1.jpg",
+        title: "📣 THU CŨ ĐỔI MỚI - BIẾN XẾ CŨ THÀNH SIÊU PHẨM MỚI! 📣",
         date: "27/03/2025"
     },
     {
-        imageUrl: "/assets/news/news-2.webp",
-        title: "Ngày vàng Vespa ưu đãi ngay 3.000.000đ",
+        imageUrl: "/assets/news/news-2.jpg",
+        title: "𝐓𝐑Ả 𝐆Ó𝐏 0% 𝐋Ã𝐈 𝐒𝐔Ấ𝐓 - RINH NGAY XE 𝐗Ị𝐍 𝐕Ề 𝐍𝐇À!‼️",
         date: "13/03/2025"
     },
     {
-        imageUrl: "/assets/news/news-3.webp",
-        title: "Mừng 8/3, Ưu đãi nhân ba lên đến 4.000.000đ",
+        imageUrl: "/assets/news/news-3.jpg",
+        title: "🎂 MỪNG SINH NHẬT VESPA - MUA SẮM THẢ GA! ️🎉",
         date: "06/03/2025"
     },
     {
-        imageUrl: "/assets/news/news-4.webp",
-        title: "Nhân đôi yêu thương lên đến 5.000.000đ",
+        imageUrl: "/assets/news/news-4.jpg",
+        title: "🛵 BẢO DƯỠNG ĐỊNH KỲ, XE BỀN BỈ CHẲNG NGẠI ĐI 🛵",
         date: "25/02/2025"
     }
 ]

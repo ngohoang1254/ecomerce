@@ -55,7 +55,7 @@ export default function Home() {
           return item.type === "vespa"
         })}
         moreSection={{
-          imageUrl: "/assets/product/section_product_images1.webp"
+          imageUrl: "/assets/product/vespa-more-section.jpg"
         }}
       />
       <Slider
@@ -81,7 +81,7 @@ export default function Home() {
           return item.type === "liberty"
         })}
         moreSection={{
-          imageUrl: "/assets/liberty/liberty-more-section.jpeg"
+          imageUrl: "/assets/liberty/liberty-more-section.jpg"
         }}
       />
       <Slider
@@ -133,7 +133,7 @@ export default function Home() {
           return item.type === "accessary"
         })}
         moreSection={{
-          imageUrl: "/assets/accessary/moresection.jpeg"
+          imageUrl: "/assets/accessory/accessory-more-section.jpg"
         }}
       />
 

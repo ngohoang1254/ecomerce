@@ -20,6 +20,7 @@ export default function SwiperHome({ component: Component, slidesPerView, autopl
                         width={250}
                         height={400}
                         alt=""
+                        className="h-full object-cover"
                     />
                 </div>
             }

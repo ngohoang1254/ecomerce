@@ -58,7 +58,7 @@ export default function Banner() {
                 className="w-full h-[300px] md:h-[500px] xl:h-[700px]"
             >
                 <SwiperSlide className="relative w-full h-full">
-                    <Image src="/assets/slider1.jpg" alt="Slide 1" fill />
+                    <Image src="/assets/banner.jpg" alt="Slide 1" fill />
                 </SwiperSlide>
                 <SwiperSlide className="relative w-full h-full">
                     <Image src="/assets/slider3.webp" alt="Slide 2" fill />
