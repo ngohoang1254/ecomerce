@@ -49,14 +49,14 @@ export default function Footer() {
                 </div>
 
                 {/* Cột 2 - Hệ thống cửa hàng */}
-                <div>
+                {/* <div>
                     <h3 className="text-lg font-bold"> HỆ THỐNG CỬA HÀNG & BẢO DƯỠNG</h3>
                     <ul className="mt-2 space-y-2 text-base">
                         <li className="hover:text-red-500 hover:translate-x-2.5 cursor-pointer"><strong>Vespa Sapa 223 - 233 Cộng Hòa, Q.Tân Bình</strong><br />Bán hàng: 028.38116414 | Dịch vụ: 028.38116414 - Line 101</li>
                         <li className="hover:text-red-500 hover:translate-x-2.5 cursor-pointer"><strong>Vespa Sapa 130 Nguyễn Oanh, P.7, Q.Gò Vấp</strong><br />Bán hàng: 028.38941772 | Dịch vụ: 028.38941771</li>
                         <li className="hover:text-red-500 hover:translate-x-2.5 cursor-pointer"><strong>Vespa Sapa 372-374 Nguyễn Thị Thập, Tân Quy, Q.7</strong><br />Bán hàng: 028.62989905 | Dịch vụ: 028.62989915</li>
                     </ul>
-                </div>
+                </div> */}
 
                 {/* Cột 3 - Sản phẩm & Dịch vụ */}
                 <div>

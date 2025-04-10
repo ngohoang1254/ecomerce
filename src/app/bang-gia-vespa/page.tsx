@@ -98,7 +98,7 @@ export default function PriceVespaNews() {
                                         Mọi chi tiết vui lòng liên hệ trực tiếp Hotline trung tâm Vespa Sapa:{" "}
                                         <u>
                                             <strong>
-                                                <a href="tel:090276399">0902763399</a>
+                                                <a href="tel:02822355355">028 22 355 355</a>
                                             </strong>
                                         </u>
                                         . Hoặc đến trực tiếp các trung tâm Vespa Sapa để được xe trực tiếp các
@@ -108,11 +108,11 @@ export default function PriceVespaNews() {
                                 <span style={{ fontSize: 16 }}>
                                     Lấy giá ưu đãi gọi ngay 📱Hotline:{" "}
                                     <strong>
-                                        <a href="tel:0902763399">0902763399</a>
+                                        <a href="tel:02822355355">02822355355</a>
                                     </strong>
                                     .<br />
                                     ✔️ Gửi nơi đký biển số vào{" "}
-                                    <a href="https://zalo.me/0902763399">Zalo 0902763399</a> - Miễn phí check
+                                    <a href="https://zalo.me/02822355355">Zalo 02822355355</a> - Miễn phí check
                                     giá lăn bánh.
                                 </span>
                             </p>
@@ -761,7 +761,7 @@ export default function PriceVespaNews() {
                                     thể, quý khách hàng vui lòng liên hệ hotline hoặc gửi: Tên xe + Nơi đăng
                                     ký biển số vào Zalo tổng đài Vespa Sapa để được hỗ trợ nhanh nhất!
                                     <br />
-                                    📱Hotline: <a href="tel:0902763399">0902763399</a>&nbsp;(Zalo)
+                                    📱Hotline: <a href="tel:02822355355">02822355355</a>&nbsp;(Zalo)
                                     <br />
                                     <strong>HỆ THỐNG CỦA HÀNG ỦY QUYỀN VESPA VIỆT NAM.</strong>
                                     <br />

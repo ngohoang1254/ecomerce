@@ -173,11 +173,25 @@ export const productList = [
         id: 15,
     },
     {
-        imageUrl: "/assets/product/product3.webp",
-        name: "Liberty Z Urban Sky",
-        price: "59.300.000₫",
+        imageUrl: "/assets/product/vespa5.png",
+        name: "Vespa Primavera Color Vibe 125",
+        price: "86,600,000₫",
         type: "vespa",
-        id: 16,
+        id: 18,
+    },
+    {
+        imageUrl: "/assets/product/vespa7.jpg",
+        name: "Vespa GTS 300 Super Tech",
+        price: "155,400,000₫",
+        type: "vespa",
+        id: 19,
+    },
+    {
+        imageUrl: "/assets/product/vespa8.png",
+        name: "Vespa Primavera Red",
+        price: "84,200,000₫",
+        type: "vespa",
+        id: 20,
     },
 ]
 

@@ -44,7 +44,7 @@ function ProductTabsContent() {
                     3/ Ưu đãi bảo hành, bảo dưỡng lên đến 7%. <br />
                     4/ Cài đặt App theo dõi tình trạng xe (chỉ có tại Piaggio Sapa). <br />
                     5/ Bảo hành, bảo dưỡng theo tiêu chuẩn Piaggio Việt Nam. <br />
-                    * Liên hệ Hotline: <strong>0902763399</strong>
+                    * Liên hệ Hotline: <strong>02822355355</strong>
                 </Tabs.Content>
                 <Tabs.Content value="review" className="tab-content">
                     <div className="w-full bg-[#0660bb] p-4 flex flex-col gap-4 text-center">

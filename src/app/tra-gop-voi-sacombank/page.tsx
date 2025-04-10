@@ -17,7 +17,7 @@ export default function InstallmentHd() {
                             <p style={{ textAlign: "center" }}>
                                 <span style={{ fontSize: 16 }}>
                                     <span style={{ color: "rgb(14, 131, 240)" }}>
-                                        TẠI VESPA SAPA - HOTLINE: <a href="tel:0902763399">0902763399</a>
+                                        TẠI VESPA SAPA - HOTLINE: <a href="tel:02822355355">02822355355</a>
                                     </span>
                                 </span>
                             </p>
@@ -149,7 +149,7 @@ export default function InstallmentHd() {
                                 <span style={{ fontSize: "12pt" }}>
                                     Để biết thêm chi tiết, quý khách có thể gọi đến{" "}
                                     <span style={{ color: "#ff0000" }}>
-                                        <strong>Hotline: 0902763399</strong>
+                                        <strong>Hotline: 02822355355</strong>
                                     </span>{" "}
                                     hoặc một trong 7 Showroom của Vespa Sapa.
                                 </span>

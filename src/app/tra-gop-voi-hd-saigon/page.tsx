@@ -22,7 +22,7 @@ export default function InstallmentHd() {
                             <h1 style={{ textAlign: "center" }}>
                                 <span style={{ fontSize: "12pt" }}>
                                     HỖ TRỢ MUA TRẢ GÓP XE VESPA/PIAGGIO KHÔNG THẾ CHẤP CỦA HD SAISON –
-                                    HOTLINE: <a href="tel:0902763399">0902763399</a>
+                                    HOTLINE: <a href="tel:02822355355">02822355355</a>
                                 </span>
                             </h1>
                             <p style={{ textAlign: "center" }}>
@@ -158,7 +158,7 @@ export default function InstallmentHd() {
                             <p style={{ textAlign: "justify" }}>
                                 <span style={{ fontSize: "12pt" }}>
                                     <strong>Bước 1: Gọi trực tiếp&nbsp;Hotline</strong>:{" "}
-                                    <a href="tel:0902763399">0902763399</a>
+                                    <a href="tel:02822355355">02822355355</a>
                                 </span>
                             </p>
                             <p style={{ textAlign: "justify" }}>
